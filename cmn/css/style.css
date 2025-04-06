@@ -215,7 +215,7 @@ header {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: var(--white);
+  background: var(--gray-75);
 }
 
 /* フッターのレイアウト調整 */
@@ -288,7 +288,6 @@ header > .container {
   max-width: none;
   width: 100%;
   padding: 0;
-  cursor: pointer;
 }
 
 .nav_header {
@@ -307,6 +306,7 @@ header > .container {
 
 .list_nav_header > li {
   padding: 0 150px;
+  cursor: pointer !important;
 }
 
 .list_nav_header a {
@@ -315,6 +315,7 @@ header > .container {
   font-size: var(--nav-font-size);
   font-weight: 700;
   letter-spacing: 0.05em;
+  cursor: pointer !important;
 }
 
 /* Top View */
@@ -780,7 +781,7 @@ header > .container {
   right: 15px;
   width: 30px;
   height: 30px;
-  cursor: pointer;
+  cursor: pointer !important;
   background: none;
   border: none;
   padding: 0;
@@ -865,7 +866,7 @@ input[type="submit"] {
   border-radius: 5px;
   margin: 0 5px;
   box-shadow: 3px 3px var(--green);
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 input[type="reset"] {
@@ -878,7 +879,7 @@ input[type="reset"] {
   border-radius: 5px;
   margin: 0 5px;
   box-shadow: 3px 3px var(--steel-blue);
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 /* Footer */
@@ -911,7 +912,7 @@ footer {
   margin: 0 5px;
   background: white;
   border-radius: 50px;
-  cursor: pointer;
+  cursor: pointer !important;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-out;
   overflow: hidden;
