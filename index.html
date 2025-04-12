@@ -1,406 +1,225 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="" />
-    <title>MyPortfolio</title>
-
-    <!-- スタイル -->
-    <link rel="stylesheet" href="cmn/css/style.css" />
-
-    <!-- Note埋め込み用スクリプト -->
-    <script
-      async
-      src="https://note.com/scripts/embed.js"
-      charset="utf-8"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/ddbbf01036.js"
-      crossorigin="anonymous"
-    ></script>
-    <meta property="og:title" content="MyPortfolio" />
-    <meta property="og:description" content="MyPortfolio" />
-    <meta
-      property="og:image"
-      content="http://ida-kuma.lomo.jp/thumbnail/bg_nightload.jpeg"
-    />
-    <meta property="og:url" content="https://itself.site" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- ページタイトル（検索結果やブラウザタブに表示） -->
+    <title>Idakuma | Web開発者のポートフォリオ</title>
+    
+    <!-- 検索結果に表示される説明文 -->
+    <meta name="description" content="栃木県在住のWebエンジニアIdakumaのポートフォリオサイト。制作実績・スキル・自己紹介を紹介しています。" />
+    
+    <!-- 補足的なキーワード（重要度は低） -->
+    <meta name="keywords" content="Idakuma, ポートフォリオ, Webエンジニア, React, Next.js, 栃木, フロントエンド" />
+    
+    <!-- SNSシェア用 Open Graph設定（Facebook, LINEなど） -->
+    <meta property="og:title" content="Idakuma | Web開発者のポートフォリオ" />
+    <meta property="og:description" content="栃木県在住のWebエンジニアIdakumaのポートフォリオ。制作実績やスキルをご紹介します。" />
+    <meta property="og:image" content="https://idakuma.site/img/img_og/img_og.png" />
+    <meta property="og:url" content="https://idakuma.site/" />
     <meta property="og:type" content="website" />
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="cmn/favicons/snowflake_white.svg"
-    />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="theme-color" content="#ffffff" />
+    
+    <!-- Twitterシェア用カード設定 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Idakuma | Web開発者のポートフォリオ" />
+    <meta name="twitter:description" content="栃木県在住のWebエンジニアIdakumaのポートフォリオサイト。" />
+    <meta name="twitter:image" content="https://idakuma.site/img_ico/ico_profile.png" />
+    
+    <!-- 正規URLの指定（重複ページ対策） -->
+    <link rel="canonical" href="https://www.idakuma.com/" />
+    
+    <!-- FontAwesomeアイコン -->
+    <script src="https://kit.fontawesome.com/ddbbf01036.js" crossorigin="anonymous"></script>
+    
+    <!-- 共通スタイルCSS -->
+    <link rel="stylesheet" href="cmn/css/style.css" />
+    
+    <!-- Google Fontsの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=M+PLUS+1p&display=swap" rel="stylesheet" />
+    
+    <!-- ファビコン -->
+    <link rel="icon" type="image/png" sizes="16x16" href="cmn/favicons/snowflake_white.svg" />
   </head>
+  
+  <body>
+    <header id="header">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#works">Works</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-  <body class="loading">
-    <div id="modal-placeholder"></div>
-    <div id="loader">
-      <img
-        src="cmn/favicons/snowflake_black.svg"
-        alt="Snowflake 1"
-        class="snowflake svg-1"
-      />
-    </div>
-
-    <div id="content" style="display: none">
-      <header>
-        <div class="container">
-          <nav class="nav_header">
-            <ul class="list_nav_header">
-              <li><a href="#works">Works</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-      </header>
+      </nav>
+    </header>
+    <main>
+      <section id="main" class="main-container">
+        <div class="box-container">
+          <div class="box"></div>
+          <h1 class="box-text">Hello World.</h1>
+        </div>
+      </section>
 
-      <a href="#" class="pagetop">
-        <div class="pagetop_arrow"></div>
-      </a>
+      <section id="works">
+        <div class="wrapper">
+          <h1>Works</h1>
+          <ul class="works-list">
+            <li class="works-item">
+              <a href="">
+                <img src="cmn/img/img_bg/bg_comingsoon.jpg" alt="モック1">
+              </a>
+            </li>
+            <li class="works-item">
+              <a href="">
+                <img src="cmn/img/img_bg/bg_comingsoon.jpg" alt="モック1">
+              </a>
+            </li>
+            <li class="works-item">
+              <a href="">
+                <img src="cmn/img/img_bg/bg_comingsoon.jpg" alt="モック1">
+              </a>
+            </li>
+            <li class="works-item">
+              <a href="">
+                <img src="cmn/img/img_bg/bg_comingsoon.jpg" alt="モック1">
+              </a>
+            </li>
+            <li class="works-item">
+              <a href="">
+                <img src="cmn/img/img_bg/bg_comingsoon.jpg" alt="モック1">
+              </a>
+            </li>
+            <li class="works-item">
+              <a href="">
+                <img src="cmn/img/img_bg/bg_comingsoon.jpg" alt="モック1">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-      <main>
-        <section class="area_top_view">
-          <div class="container">
-            <a role="presentation">
-              <span class="top_ttl">It's it's portfolio.</span>
-              <span class="sub_ttl">Ida Takuma/K</span>
+      <section id="profile">
+        <div class="wrapper">
+          <h1>Profile</h1>
+          <div class="profile-container">
+            <div class="profile-area">
+              <img
+                src="cmn/img/img_ico/ico_profile.png"
+                alt="プロフィール画像"
+              />
+              <div class="name-area">
+                <p>Ida</p>
+                <p>Takuma</p>
+              </div>
+              <div class="affiliation-area">
+                <p>University Student</p>
+                <p>February.20,2004</p>
+              </div>
+            </div>
+
+            <div class="skill-area">
+              <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skills-group">
+                  <span class="skill lang">Python</span>
+                  <span class="skill lang">C言語</span>
+                  <span class="skill lang">Java</span>
+                  <span class="skill lang">HTML</span>
+                  <span class="skill lang">CSS</span>
+                  <span class="skill lang">JavaScript</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h3>Development Tools</h3>
+                <div class="skills-group">
+                  <span class="skill dev">VSCode</span>
+                  <span class="skill dev">GitHub</span>
+                  <span class="skill dev">Cursor</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h3>AI Tools</h3>
+                <div class="skills-group">
+                  <span class="skill ai">ChatGPT</span>
+                  <span class="skill ai">Cursor</span>
+                  <span class="skill ai">Suno</span>
+                  <span class="skill ai">Ideogram</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h3>Design Tools</h3>
+                <div class="skills-group">
+                  <span class="skill design">Figma</span>
+                  <span class="skill design">Photoshop</span>
+                  <span class="skill design">PremierePro</span>
+                  <span class="skill design">Illustrator</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="button-group">
+          <div class="button">
+            <a href="https://x.com/ida_kuma040220?s=21" target="_blank">
+              <div class="icon">
+                <i class="fa-brands fa-x-twitter"></i>
+              </div>
+              <span>Twitter</span>
             </a>
           </div>
-        </section>
 
-        <section class="area_works" id="works">
-          <!-- Note -->
-          <section class="works_container" id="note">
-            <div class="works_ttl">
-              <p class="large_tx">
-                <a
-                  href="https://note.com/oyatsu_calpas04"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Note
-                </a>
-              </p>
-            </div>
-            <ul class="unordered_list_note">
-              <li class="list_note">
-                <iframe
-                  class="note-embed"
-                  src="https://note.com/embed/notes/n9ff95cde1eeb"
-                ></iframe>
-              </li>
-              <li class="list_note">
-                <iframe
-                  class="note-embed"
-                  src="https://note.com/embed/notes/ne77e8d313a0f"
-                ></iframe>
-              </li>
-              <li class="list_note">
-                <iframe
-                  class="note-embed"
-                  src="https://note.com/embed/notes/na2a0bb868528"
-                ></iframe>
-              </li>
-              <li class="list_note">
-                <iframe
-                  class="note-embed"
-                  src="https://note.com/embed/notes/n34b0b14ec47b"
-                ></iframe>
-              </li>
-              <li class="list_note">
-                <iframe
-                  class="note-embed"
-                  src="https://note.com/embed/notes/n7a48ea871aad"
-                ></iframe>
-              </li>
-              <li class="list_note">
-                <iframe
-                  class="note-embed"
-                  src="https://note.com/embed/notes/nab809e3bf678"
-                ></iframe>
-              </li>
-              <li class="list_note">
-                <iframe
-                  class="note-embed"
-                  src="https://note.com/embed/notes/n4def249a1f67"
-                ></iframe>
-              </li>
-              <li class="list_note">
-                <iframe
-                  class="note-embed"
-                  src="https://note.com/embed/notes/nad37822b09eb"
-                ></iframe>
-              </li>
-              <li class="list_note">
-                <iframe
-                  class="note-embed"
-                  src="https://note.com/embed/notes/n362e26073d3b"
-                ></iframe>
-              </li>
-              <li class="list_note">
-                <iframe
-                  class="note-embed"
-                  src="https://note.com/embed/notes/nd7a7d04759a0"
-                ></iframe>
-              </li>
-              <li class="list_note">
-                <iframe
-                  class="note-embed"
-                  src="https://note.com/embed/notes/n5cbc3ab6049c"
-                ></iframe>
-              </li>
-              <li class="list_note">
-                <iframe
-                  class="note-embed"
-                  src="https://note.com/embed/notes/n62801dba0210"
-                ></iframe>
-              </li>
-            </ul>
-          </section>
-
-          <!-- hp -->
-          <section class="works_container" id="hp">
-            <div class="body_works">
-              <div class="works_ttl">
-                <p class="large_tx">Homepage</p>
-                <p class="small_tx">
-                  <a href="https://code-jump.com" target="_blank"
-                    >(Reproduction)</a
-                  >
-                </p>
+          <div class="button">
+            <a
+              href="https://www.instagram.com/ida_nanoda?igsh=djJ1eXZ5ZDlwcW9o&utm_source=qr"
+              target="_blank"
+            >
+              <div class="icon">
+                <i class="fa-brands fa-instagram"></i>
               </div>
-              <ul class="unordered_list_works">
-                <li class="list_works">
-                  <a
-                    href="cmn/html/imitation/bicycle/index.html"
-                    target="_blank"
-                  >
-                    <img
-                      src="cmn/html/imitation/bicycle/img/bicycle_image.jpg"
-                      class="works_img"
-                      onselectstart="return false;"
-                      onmousedown="return false;"
-                    />
-                  </a>
-                </li>
-                <li class="list_works">
-                  <a href="cmn/html/imitation/photo/index.html" target="_blank">
-                    <img
-                      src="cmn/html/imitation/photo/img/photo_image.jpg"
-                      class="works_img"
-                      onselectstart="return false;"
-                      onmousedown="return false;"
-                    />
-                  </a>
-                </li>
-                <li class="list_works">
-                  <img
-                    src="cmn/img/imp_bg/bg_comingsoon.jpg"
-                    class="works_img"
-                    onselectstart="return false;"
-                    onmousedown="return false;"
-                  />
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <!-- suno -->
-          <section class="works_container" id="suno">
-            <div class="body_works">
-              <div class="works_ttl">
-                <p class="large_tx">Suno</p>
-                <p class="small_tx">
-                  <a
-                    href="https://www.youtube.com/channel/UCGW72MkU5CnPxHujvEgYqAw"
-                    target="_blank"
-                    >at youtube</a
-                  >
-                </p>
-              </div>
-              <ul class="unordered_list_works">
-                <li class="list_works">
-                  <iframe
-                    class="list_video"
-                    src="https://www.youtube.com/embed/wvYiptocu7Y?si=XT_0TL7uBx-qG3-r"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
-                </li>
-                <li class="list_works">
-                  <iframe
-                    class="list_video"
-                    src="https://www.youtube.com/embed/cgoPD0hqQbo?si=ACBob6hFiqmmnNR3"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
-                </li>
-                <li class="list_works">
-                  <iframe
-                    class="list_video"
-                    src="https://www.youtube.com/embed/047oSO2X2Kw?si=oipXFVD9UEbVyeKh"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </section>
-
-        <section id="about">
-          <section class="area_profile" id="profile">
-            <div class="profile_container">
-              <div class="profile_ttl">
-                <p class="large_tx">Profile</p>
-              </div>
-
-              <div class="profile_content">
-                <div class="basic_info">
-                  <div class="profile_img">
-                    <img
-                      src="cmn/img/imp_ico/ico_profile.jpg"
-                      alt="NCG_EVERGREEN"
-                    />
-                  </div>
-
-                  <div class="profile_txt">
-                    <div class="affiliation_div">
-                      <p class="affiliation">
-                        <span class="blue">理</span>系大学生
-                      </p>
-                    </div>
-
-                    <div class="name_div">
-                      <p class="name">
-                        <span class="blue">I</span>da Ta<span class="green"
-                          >k</span
-                        ><span class="blue">u</span>ma
-                      </p>
-                    </div>
-
-                    <div class="birthday_div">
-                      <p class="birthday">
-                        Februar<span class="blue">y</span>.20,2004
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="skills_info">
-                  <div class="skill_category">
-                    <h3>Languages</h3>
-                    <div class="skills_group">
-                      <span class="skill lang">Python</span>
-                      <span class="skill lang">C言語</span>
-                      <span class="skill lang">Java</span>
-                      <span class="skill lang">HTML</span>
-                      <span class="skill lang">CSS</span>
-                      <span class="skill lang">JavaScript</span>
-                    </div>
-                  </div>
-
-                  <div class="skill_category">
-                    <h3>Development Tools</h3>
-                    <div class="skills_group">
-                      <span class="skill dev">VSCode</span>
-                      <span class="skill dev">GitHub</span>
-                    </div>
-                  </div>
-
-                  <div class="skill_category">
-                    <h3>AI Tools</h3>
-                    <div class="skills_group">
-                      <span class="skill ai">ChatGPT</span>
-                      <span class="skill ai">Cursor</span>
-                      <span class="skill ai">Suno</span>
-                      <span class="skill ai">Ideogram</span>
-                    </div>
-                  </div>
-
-                  <div class="skill_category">
-                    <h3>Design Tools</h3>
-                    <div class="skills_group">
-                      <span class="skill design">Figma</span>
-                      <span class="skill design">Photoshop</span>
-                      <span class="skill design">PremierePro</span>
-                      <span class="skill design">Illustrator</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </section>
-
-        <section id="contact"></section>
-      </main>
-
-      <footer>
-        <div class="wrapper">
-          <div class="button-group">
-            <div class="button">
-              <a href="https://x.com/ida_kuma040220?s=21" target="_blank">
-                <div class="icon">
-                  <i class="fa-brands fa-x-twitter"></i>
-                </div>
-                <span>Twitter</span>
-              </a>
-            </div>
-
-            <div class="button">
-              <a
-                href="https://www.instagram.com/ida_nanoda?igsh=djJ1eXZ5ZDlwcW9o&utm_source=qr"
-                target="_blank"
-              >
-                <div class="icon">
-                  <i class="fa-brands fa-instagram"></i>
-                </div>
-                <span>Instagram</span>
-              </a>
-            </div>
-
-            <div class="button">
-              <a href="https://github.com/idakuma" target="_blank">
-                <div class="icon">
-                  <i class="fa-brands fa-github"></i>
-                </div>
-                <span>GitHub</span>
-              </a>
-            </div>
-
-            <div class="button">
-              <a href="#" class="contact-trigger">
-                <div class="icon">
-                  <i class="fa-regular fa-envelope"></i>
-                </div>
-                <span>E-mail</span>
-              </a>
-            </div>
+              <span>Instagram</span>
+            </a>
           </div>
-          <p class="copyright">©︎ 2024 Idakuma</p>
+
+          <div class="button">
+            <a href="https://github.com/kumasan-040220" target="_blank">
+              <div class="icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <span>GitHub</span>
+            </a>
+          </div>
+
+          <div class="button">
+            <a href="#" class="contact-trigger">
+              <div class="icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <span>E-mail</span>
+            </a>
+          </div>
         </div>
-      </footer>
-    </div>
-
-    <!-- JavaScriptファイルをリンク -->
-    <script src="cmn/js/loader.js"></script>
-
+        <p class="copyright">©︎ 2024 Idakuma</p>
+      </div>
+    </footer>
+    <section id="modal-placeholder"></section>
+    <script src="cmn/js/hamburger.js"></script>
+    <script src="cmn/js/app.js"></script>
     <script src="cmn/js/loadModal.js"></script>
   </body>
 </html>

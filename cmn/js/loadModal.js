@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
 function initializeModal() {
   const contactLink = document.querySelector('a[href="#contact"]');
   const contactTrigger = document.querySelector(".contact-trigger");
-  const contactForm = document.querySelector(".contact_form");
-  const contactOverlay = document.querySelector(".contact_overlay");
-  const closeButton = document.querySelector(".close_button");
+  const contactForm = document.querySelector(".contact-form");
+  const contactOverlay = document.querySelector(".contact-overlay");
+  const closeButton = document.querySelector(".close-button");
 
   // モーダルを開く関数
   function openModal() {
